@@ -27,7 +27,7 @@ jobs:
       - name: Safety security scan
         run: |
           pip install safety
-          safety scan --full-report
+          safety check --full-report
 
       - name: Snyk vulnerability scan
         uses: snyk/actions/python@master
